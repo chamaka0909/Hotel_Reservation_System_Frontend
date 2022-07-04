@@ -12,7 +12,7 @@ function App() {
   const [name, setName] = useState();
 
   const handleToken = (token) => {
-    fetch("http://localhost:5000/payment/donate", {
+    fetch("https://hotel-system20.herokuapp.com/payment/donate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

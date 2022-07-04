@@ -17,7 +17,7 @@ export default class ViewRoomDetails extends Component {
   }
 
   retrieveRooms() {
-    axios.get("http://localhost:5000/rooms").then((res) => {
+    axios.get("https://hotel-system20.herokuapp.com/rooms").then((res) => {
       if (res.data.success) {
         this.setState({
             roomdetails: res.data.existingroomdetails,
@@ -29,7 +29,7 @@ export default class ViewRoomDetails extends Component {
   }
 
   onDelete =(id)=>{
-    axios.delete(`http://localhost:5000/room/delete/${id}`).then((res)=>{
+    axios.delete(`https://hotel-system20.herokuapp.com/room/delete/${id}`).then((res)=>{
 
       alert("Room Deleted sucessfull")
       this.retrieveRooms();

@@ -46,7 +46,7 @@ export default class CreateRoomDetails extends Component {
 
     console.log(data);
 
-    axios.post("http://localhost:5000/room/save", data).then((res) => {
+    axios.post("https://hotel-system20.herokuapp.com/room/save", data).then((res) => {
       if (res.data.success) {
         alert("Hotel Room Created Successfully");
         window.location = "/rooms";

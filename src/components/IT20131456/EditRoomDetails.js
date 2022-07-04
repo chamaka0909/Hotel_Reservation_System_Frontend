@@ -56,7 +56,7 @@ export default class EditRoomDetails extends Component {
 
     console.log(data);
 
-    axios.put(`http://localhost:5000/room/update/${id}`, data).then((res) => {
+    axios.put(`https://hotel-system20.herokuapp.com/room/update/${id}`, data).then((res) => {
       if (res.data.success) { 
         alert("Hotel Room Updated Successfully");
         window.location ="/rooms"
@@ -78,7 +78,7 @@ export default class EditRoomDetails extends Component {
   componentDidMount() {
     const id = this.props.match.params.id;
 
-    axios.get(`http://localhost:5000/room/${id}`).then((res) => {
+    axios.get(`https://hotel-system20.herokuapp.com/room/${id}`).then((res) => {
       if (res.data.success) {
         this.setState({
         hotelid:res.data.roomdetails.hotelid,
