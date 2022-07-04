@@ -30,7 +30,6 @@ import Customers from "./components/IT20125202/Customers";
 import TaxiServiceAlert from "./components/IT20127046/TaxiServiceAlert";
 import BookTaxi from "./components/IT20127046/BookTaxi";
 import AboutUs from './components/IT20125202/AboutUs';
-import UpdateCustomer from  './components/IT20125202/UpdateCustomer';
 import viewemails from './components/IT20128036/viewEmailDetails';
 
 
